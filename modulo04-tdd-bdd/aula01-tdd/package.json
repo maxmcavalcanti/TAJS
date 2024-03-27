@@ -1,0 +1,22 @@
+{
+  "name": "aula01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --injectGlobals false --runInBand test/",
+    "test:dev": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --injectGlobals false --runInBand --watchAll test/",
+    "test:debug": "node --experimental-vm-modules --inspect-brk ./node_modules/jest/bin/jest.js --injectGlobals false --runInBand --watchAll test/"
+  },
+  "keywords": [],
+  "author": "max",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": "v19.3.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
